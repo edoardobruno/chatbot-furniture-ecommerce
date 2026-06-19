@@ -1,0 +1,78 @@
+[RAG] CHROMA_PATH : H:\Il mio Drive\Chabot_Interior Design\coding\chroma_vitra_multi
+[RAG] PDF_DIR     : H:\Il mio Drive\Chabot_Interior Design\dataset_RAG
+[RAG] API_KEY_PATH: H:\Il mio Drive\Chabot_Interior Design\coding\openai_key.txt
+[RAG] Mappa prodotti: {'eames_plastic_chair': 'Eames Plastic Chair', 'mikado': 'Mikado', 'mynt': 'Mynt', 'eames_wire_chair': 'Eames Wire Chair', 'plywood_group_chairs': 'Plywood Group Chairs', 'standard_standard_sp_chaise_tout_bois': 'Standard Standard SP Chaise Tout Bois', 'panton_chair_classic': 'Panton Chair Classic', 'tipton_re': 'TipTon RE', 'v-foam_hal_family': 'V-Foam HAL Family', 'apc': 'APC'}
+[RAG] Prodotto riconosciuto: Panton Chair Classic
+
+[RAG] CHUNK SELEZIONATI:
+
+CHUNK 1:
+  product : Panton Chair Classic
+  language: EN
+  section : dimensions
+  testo (prime 300 chars):
+  of the Museum of Modern Art in New York. Today the Panton Chair is regarded as a classic of modern furniture design. The original version of the chair in rigid polyurethane foam with a glossy lacquer ﬁ nish is marketed under the name Panton Chair Classic. ∏ Shell: rigid polyurethane foam. ∏ Surface:
+--------------------------------------------------------------------------------
+CHUNK 2:
+  product : Panton Chair Classic
+  language: EN
+  section : dimensions
+  testo (prime 300 chars):
+  490 19¼” 600 23½”500 19¾” 455 18” 830 35¼” 405 16” 415 16¼” /uniE002 Verner Panton was one of the most inﬂ uential ﬁ gures in the development of design during the /one.osf/nine.osf/six.osf/zero.osfs and ’/seven.osf/zero.osfs. Along with his experimental approach to forms and colours, he was captivat
+--------------------------------------------------------------------------------
+CHUNK 3:
+  product : Panton Chair Classic
+  language: IT
+  section : dimensions
+  testo (prime 300 chars):
+  of Modern Art di New York. Oggi la Panton Chair è considerata un grande classico tra i mobili di design moderni. La versione originale della sedia in schiuma poliureta- nica rigida con ﬁ nitura lucida è commer- cializzata con il nome di Panton Chair Classic. ∏ Scocca: schiuma poliuretanica rigida. ∏
+--------------------------------------------------------------------------------
+CHUNK 4:
+  product : Panton Chair Classic
+  language: IT
+  section : materials
+  testo (prime 300 chars):
+  490 19¼” 600 23½”500 19¾” 455 18” 830 35¼” 405 16” 415 16¼” /uniE002 Verner Panton è stato una delle ﬁ gure più inﬂ uenti nello sviluppo del design negli anni ‚/six.osf/zero.osf e ‚/seven.osf/zero.osf. Oltre al suo approccio sperimen- tale nei confronti di forme e colori, era a/uniFB00 ascinato dal
+--------------------------------------------------------------------------------
+
+=== RISPOSTA DEL CHATBOT (RAG + LLM) ===
+
+The Panton Chair Classic by Vitra has the following specifications:
+
+**Dimensions** (in accordance with EN 1335-1):
+- Height: 830 mm (35¼”)
+- Width: 600 mm (23½”)
+- Depth: 490-500 mm (19¼” - 19¾”)
+- Seat height: 405-415 mm (16” - 16¼”)
+- Seat depth: 455 mm (18”)
+
+**Colors available:**
+- White
+- Black
+- Red
+- Green
+
+**Material:**
+- Shell: rigid polyurethane foam
+- Surface: glossy lacquer finish
+
+**Contact email for Vitra:** info@vitra.com
+
+For more information, you can also visit: www.vitra.com or www.vitra.com/pantonchairclassic
+[METRICHE] Valutazione retrieval per prodotto: Panton Chair Classic
+
+=== METRICHE DI RETRIEVAL (SINGOLA QUERY) ===
+Recall@k        : 1.000
+Reciprocal Rank : 1.000
+Cosine similarities (query ↔ ogni chunk):
+  #1  id=chunk_308   cos_sim=0.691
+  #2  id=chunk_307   cos_sim=0.649
+  #3  id=chunk_310   cos_sim=0.637
+  #4  id=chunk_87   cos_sim=0.621
+  #5  id=chunk_234   cos_sim=0.544
+
+=== VALUTAZIONE DI FAITHFULNESS (LLM-AS-A-JUDGE) ===
+
+FAITHFULNESS: 5/5
+SPIEGAZIONE: La risposta del chatbot riporta correttamente le dimensioni, i colori e i materiali della Panton Chair Classic come indicato nel contesto. Inoltre fornisce l'indirizzo email di contatto e i link al sito Vitra esattamente come presenti nel testo fornito, senza aggiungere informazioni non supportate.
+PS H:\Il mio Drive\Chabot_Interior Design> 

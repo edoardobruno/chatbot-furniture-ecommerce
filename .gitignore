@@ -1,0 +1,37 @@
+# Python environments and caches
+/.venv/
+venv/
+env/
+__pycache__/
+
+
+# Credentials and local environment files
+.env
+*.env
+/secrets/
+*credentials*
+*api_key*
+
+# Operating-system and editor files
+.DS_Store
+Thumbs.db
+*.swp
+*.tmp
+*.log
+
+# Large or reproducible datasets
+data/raw/product_images/
+data/raw/rag_documents/
+data/processed/object_detection/
+*.cache
+
+# Model weights and local vector stores
+models/chroma_db/
+models/**/*.pt
+models/**/*.pth
+
+# Current files above GitHub's 100 MB file limit
+/models/faster_rcnn/model_final.pth
+
+# Reproducible training artifacts
+outputs/training/

@@ -1,0 +1,25 @@
+# Application and RAG
+streamlit
+openai
+chromadb
+sentence-transformers
+numpy
+Pillow
+
+# Document loading and text processing
+langchain
+langchain-community
+pypdf
+tqdm
+
+# Image dataset collection
+ddgs
+requests
+
+# Computer vision
+torch
+torchvision
+ultralytics
+
+# Faster R-CNN experiment
+detectron2 @ git+https://github.com/facebookresearch/detectron2.git@main
