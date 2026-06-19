@@ -1,6 +1,6 @@
 # Online Furniture Shopping Chatbot
 
-A multimodal academic prototype for online furniture shopping that combines
+A multimodal prototype for online furniture shopping that combines
 technical-document retrieval, large language models, and visual object
 detection in a single conversational interface.
 
