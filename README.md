@@ -70,23 +70,23 @@ application:
 
 ```text
 Technical PDFs
-    → parsing
-    → chunking and metadata
-    → Sentence-BERT embeddings
-    → Chroma vector database
-    → semantic retrieval
-    → controlled LLM prompt
-    → grounded answer
+    - parsing
+    - chunking and metadata
+    - Sentence-BERT embeddings
+    - Chroma vector database
+    - semantic retrieval
+    - controlled LLM prompt
+    - grounded answer
 
 Furniture images
-    → image collection
-    → annotation and dataset preparation
-    → YOLO11n / Faster R-CNN training
-    → object detection
-    → recognized product category
+    - image collection
+    - annotation and dataset preparation
+    - YOLO11n / Faster R-CNN training
+    - object detection
+    - recognized product category
 
 Text question + uploaded image
-    → Streamlit multimodal chatbot
+    - Streamlit multimodal chatbot
 ```
 
 ## RAG pipeline
@@ -232,8 +232,6 @@ Online-Furniture-Shopping-Chatbot/
     └── key.txt
 ```
 
-The `secrets/` directory, large datasets, vector database, training runs, and
-model weights are excluded from Git through `.gitignore`.
 
 ## Script inventory
 
