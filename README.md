@@ -1,4 +1,4 @@
-# MULTIMODAL AI CHATBOT FURNITURE E-COMMERCE
+## MULTIMODAL AI CHATBOT FURNITURE E-COMMERCE
 
 A multimodal prototype for online furniture shopping that combines
 technical-document retrieval, large language models, and visual object
